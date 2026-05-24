@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sha256-local-pwa-v2';
+const CACHE_NAME = 'sha256-local-pwa-v3';
 const ASSETS = [
   './',
   './index.html',
