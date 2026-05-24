@@ -110,5 +110,6 @@
     window.addEventListener('pagehide',()=>stopQrCamera(''));
     if('serviceWorker'in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}))}
   </script>
+  <script src="qr-import.js"></script>
 </body>
 </html>
