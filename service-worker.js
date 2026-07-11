@@ -1,7 +1,8 @@
-const CACHE_NAME = 'sha256-local-pwa-v5';
+const CACHE_NAME = 'sha256-local-pwa-v6';
 const ASSETS = [
   './',
   './index.html',
+  './ip.html',
   './qr-import.js',
   './manifest.webmanifest',
   './icons/icon.svg'
