@@ -1,9 +1,10 @@
-const CACHE_NAME = 'sha256-local-pwa-v6';
+const CACHE_NAME = 'sha256-local-pwa-v7';
 const ASSETS = [
   './',
   './index.html',
   './ip.html',
   './qr-import.js',
+  './visitor-log.js',
   './manifest.webmanifest',
   './icons/icon.svg'
 ];
@@ -26,6 +27,8 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
+  // Ne pas intercepter ni mettre en cache l'endpoint de journalisation.
+  if (event.request.url.includes('/api/')) return;
   event.respondWith(
     fetch(event.request).then(response => {
       const copy = response.clone();

@@ -61,9 +61,10 @@
           <div id="timer" class="timer" aria-live="polite"></div>
         </div>
       </main>
-      <footer>Application locale offline. SHA-256 via Web Crypto API. QR via API navigateur. <a href="ip.html" style="color:#a5b4fc">Voir mon adresse IP</a></footer>
+      <footer>Application locale offline. SHA-256 via Web Crypto API. QR via API navigateur. <a href="ip.html" style="color:#a5b4fc">Voir mon adresse IP</a><br><span style="opacity:.75">Les visites (adresse IP, date, navigateur) sont enregistrées à des fins de sécurité et de statistiques.</span></footer>
     </section>
   </div>
+  <script src="visitor-log.js" defer></script>
 
   <script>
     const textInput=document.getElementById('textInput'),fileInput=document.getElementById('fileInput'),hashOutput=document.getElementById('hashOutput'),statusEl=document.getElementById('status'),timerEl=document.getElementById('timer'),fileHint=document.getElementById('fileHint'),installBtn=document.getElementById('installBtn'),qrFileInput=document.getElementById('qrFileInput'),qrVideo=document.getElementById('qrVideo'),videoWrap=document.getElementById('videoWrap'),otpSecret=document.getElementById('otpSecret'),otpType=document.getElementById('otpType'),otpLabel=document.getElementById('otpLabel'),otpIssuer=document.getElementById('otpIssuer'),otpAlgo=document.getElementById('otpAlgo');

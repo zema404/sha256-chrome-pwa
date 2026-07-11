@@ -63,7 +63,7 @@
           <div id="status" class="status" role="status" aria-live="polite"></div>
         </div>
       </main>
-      <footer>Détection via <a href="https://www.ipify.org" rel="noopener" target="_blank">ipify.org</a>. Nécessite une connexion Internet.</footer>
+      <footer>Détection via <a href="https://www.ipify.org" rel="noopener" target="_blank">ipify.org</a>. Nécessite une connexion Internet.<br><span style="opacity:.75">Les visites (adresse IP, date, navigateur) sont enregistrées à des fins de sécurité et de statistiques.</span></footer>
     </section>
   </div>
 
@@ -110,5 +110,6 @@
     document.getElementById('refresh').addEventListener('click',load);
     load();
   </script>
+  <script src="visitor-log.js" defer></script>
 </body>
 </html>
